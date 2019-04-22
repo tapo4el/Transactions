@@ -1,7 +1,7 @@
 import React from 'react';
 
-// import Transaction from '../Transaction';
-// import './styles.css';
+import Transaction from '../Transaction';
+import './styles.css';
 
 class TransactionsList extends React.PureComponent {
     static propTypes = {
@@ -11,7 +11,7 @@ class TransactionsList extends React.PureComponent {
         const { transactions } = this.props;
         return (
             <div className="transactionsList">
-                { transactions.map(el => <div>{el.id}</div>)}
+                { transactions.map(el => <Transaction {...el}/>)}
             </div>
         );
     }

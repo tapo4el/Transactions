@@ -1,0 +1,8 @@
+body {
+    padding: 50px;
+}
+.transactions-app {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+}

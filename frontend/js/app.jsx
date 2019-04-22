@@ -2,7 +2,7 @@ import React from 'react';
 import { hot } from 'react-hot-loader/index';
 import 'reset-css';
 
-// import './style.css'
+import './styles.css'
 
 import TransactionsList from './components/TransactionsList';
 

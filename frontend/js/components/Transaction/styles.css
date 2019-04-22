@@ -1,0 +1,38 @@
+.transaction {
+    line-height: 14px;
+    padding: 5px;
+    display: list-item;
+    table-layout: fixed;
+    list-style: none;
+    border-top: 1px solid rgba(34,36,38,.15);
+}
+.transaction:first-child {
+    border-top: none;
+}
+
+.transaction:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.transaction .text {
+    padding: 10px 0 0 0;
+}
+.button {
+    float: right;
+}
+.button button {
+    background: #e0e1e2 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.button button:hover {
+    background: #cacbcd;
+}
