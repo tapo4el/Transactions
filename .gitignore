@@ -1,0 +1,6 @@
+.idea/
+/node_modules
+yarn.lock
+/public/bundle.js
+/public/bundle.css
+/coverage
