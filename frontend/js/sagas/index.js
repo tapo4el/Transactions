@@ -1,9 +1,15 @@
-import { all } from 'redux-saga/effects';
+import { all, spawn } from 'redux-saga/effects';
 
-// import suggestions from './suggestions';
+import { initTransactionsLimit, watchTransactionsLimitChange } from './transactionsLimit';
+import { initSubscriptions, watchSubscriptionsChange } from './subscriptions';
+import runFetchWithInterval from './transactions';
 
 export default function* sagas() {
     yield all([
-        // suggestions(),
+        spawn(initTransactionsLimit),
+        spawn(initSubscriptions),
+        watchSubscriptionsChange(),
+        watchTransactionsLimitChange(),
+        runFetchWithInterval()
     ]);
 };

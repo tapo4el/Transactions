@@ -11,3 +11,8 @@ export const getSubscriptions = createSelector(
     appState,
     ({ subscriptions }) => subscriptions
 );
+
+export const getTransactionsLimit = createSelector(
+    appState,
+    ({ transactionsLimit }) => transactionsLimit
+);
