@@ -1,11 +1,12 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { number, func } from 'prop-types';
 
 import './styles.css';
 
 class Input extends React.PureComponent {
     static propTypes = {
-        // limit: string.isRequired,
+        limit: number.isRequired,
+        changeTransactionsLimit: func.isRequired
     };
 
     onChangeHandler = ({ target }) => {

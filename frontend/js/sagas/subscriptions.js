@@ -7,8 +7,8 @@ import { getSubscriptions } from '../selectors';
 const storeKey = 'subscriptions';
 
 export function* initSubscriptions() {
-    const payload = yield storeManager.readData(storeKey) || [];
-    yield put(initializeSubscriptions(payload));
+    const payload = yield storeManager.readData(storeKey);
+    yield put(initializeSubscriptions(payload || []));
 }
 
 export function* storeSubscriptions() {

@@ -1,9 +1,14 @@
 import React from 'react';
+import { string, func, arrayOf } from 'prop-types';
 
 import './styles.css';
 
 class Button extends React.PureComponent {
     static propTypes = {
+        id: string.isRequired,
+        subscribe: func.isRequired,
+        unSubscribe: func.isRequired,
+        subscriptions: arrayOf(string),
     };
 
     render () {

@@ -1,10 +1,12 @@
 import React from 'react';
+import { array } from 'prop-types';
 
 import Transaction from '../Transaction';
 import './styles.css';
 
 class TransactionsList extends React.PureComponent {
     static propTypes = {
+        transactions: array.isRequired
     };
 
     render() {
@@ -15,6 +17,6 @@ class TransactionsList extends React.PureComponent {
             </div>
         );
     }
-};
+}
 
 export default TransactionsList;
