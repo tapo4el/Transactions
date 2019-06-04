@@ -8,7 +8,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "start:dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "eslint frontend/**/*.js frontend/**/*.jsx"
   },
   "dependencies": {
     "debug": "^4.1.1",
@@ -35,12 +36,18 @@
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.5",
     "babel-polyfill": "^6.26.0",
     "css-loader": "^2.1.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.7.1",
     "mini-css-extract-plugin": "^0.6.0",

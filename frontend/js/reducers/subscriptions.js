@@ -5,7 +5,7 @@ import { subscribeToTransaction, unSubscribeFromTransaction, initializeSubscript
 const initialState = [];
 
 export default handleActions({
-    [subscribeToTransaction]: (state, { payload }) => state.concat(payload),
-    [unSubscribeFromTransaction]: (state, { payload }) => state.filter(id => id != payload),
-    [initializeSubscriptions]: (state, { payload }) => payload
+  [subscribeToTransaction]: (state, { payload }) => state.concat(payload),
+  [unSubscribeFromTransaction]: (state, { payload }) => state.filter(id => id !== payload),
+  [initializeSubscriptions]: (state, { payload }) => payload,
 }, initialState);

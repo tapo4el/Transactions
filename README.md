@@ -17,4 +17,11 @@ to confirm transaction execute - http://localhost:3000/transactions/confirm/{tra
 
 to add more transaction - http://localhost:3000/transactions/generate
 
+## Used technologies
+- for notification created ServiceWorker and used 'web-push' library
+- React, Redux, redux-actions, reselect, redux-saga
+- Babel
+- Eslint
+- Webpack
+- NodeJS, express.js
 

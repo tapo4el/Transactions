@@ -3,16 +3,16 @@ import { createSelector } from 'reselect';
 const appState = state => state;
 
 export const getTransactions = createSelector(
-    appState,
-    ({ transactions }) => transactions
+  appState,
+  ({ transactions }) => transactions,
 );
 
 export const getSubscriptions = createSelector(
-    appState,
-    ({ subscriptions }) => subscriptions
+  appState,
+  ({ subscriptions }) => subscriptions,
 );
 
 export const getTransactionsLimit = createSelector(
-    appState,
-    ({ transactionsLimit }) => transactionsLimit
+  appState,
+  ({ transactionsLimit }) => transactionsLimit,
 );
