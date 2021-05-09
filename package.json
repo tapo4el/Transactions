@@ -16,7 +16,7 @@
     "express": "^4.16.4",
     "http-errors": "^1.7.2",
     "localforage": "^1.7.3",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "morgan": "^1.9.1",
     "pug": "^2.0.3",
     "react": "^16.8.6",
